@@ -1,19 +1,23 @@
 #include <stdio.h>
 
-int main() {
-	int score;
-	scanf("%d", &score);
-	
-	if (score >= 90)
-		printf("A\n");
-	else if (score >= 80)
-		printf("B\n");
-	else if (score >= 70)
-		printf("C\n");
-	else if (score >= 60)
-		printf("D\n");
-	else
-		printf("F\n");
+int main() 
+{
+	int N;
+	scanf("%d", &N);
+
+	if (N >= 90) {
+		printf("A");
+	}
+	else if (N >= 80) {
+		printf("B");
+	}
+	else if (N>=70) {
+		printf("C");
+	}
+	else if (N>=60) {
+		printf("D");
+	}
+	else printf("F");
 
 	return 0;
 }

@@ -1,0 +1,23 @@
+### 코드를 다음과 같이 축약할 수 있다.
+
+#include <stdio.h>
+
+int main(void)
+{
+	int H, M;
+	scanf("%d %d", &H, &M);
+
+	if (45 <= M) {
+		M -= 45;
+		printf("%d %d\n", H, M);
+	}
+	else {
+		M += 15;
+		if (H == 0) {
+			H = 23;
+		}
+		else
+			H -= 1;
+		printf("%d %d\n", H, M);
+	}
+}
